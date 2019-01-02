@@ -59,6 +59,7 @@ public class UserControllerTest {
     @Test
     public void createUser_XML() throws Exception {
         String userJson = "{\"username\":\"keesun\",\"password\":\"123\"}";
+
         mockMvc.perform(post("/users/create")
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .accept(MediaType.APPLICATION_XML)
